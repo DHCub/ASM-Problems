@@ -14,7 +14,33 @@ Francisco Préstamo Bernadez
 
 Darío Hernández Cubilla
 
-## Pseudocode
+## Code
+
+### Problem 016
+
+``` Python
+def Convert(str, base):
+    k = 1
+    val = 0
+    i = len(str) - 1
+    while(i >= 0):
+        c = str[i]
+        c = getValue(c)
+
+        val += c*k
+
+        k *= base
+        i -= 1
+
+    return val
+
+def getValue(c):
+    if ord(c) - ord('A') >= 0: 
+        return ord(c) - ord('A') + 10
+    else: 
+        return ord(c) - ord('0')
+
+```
 
 ### Problem 017
 
