@@ -18,6 +18,8 @@ Darío Hernández Cubilla
 
 ### Problem 016
 
+We assume the input is correct: ```([A-Z]|[0-9])+``` for the string and a positive integer for the base, we also assume the alphabet to which the elements of the string belong is a valid one for the given base (input checking was not asked of us)
+
 ``` Python
 def Convert(str, base):
     k = 1
